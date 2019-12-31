@@ -38,8 +38,8 @@
         targetCheckboxText: 'Open in new window',
 
         // Options for the Button base class
-        name: 'anchor',
-        action: 'createLink',
+        name: 'anchor2',
+        action: 'createLink',sads
         aria: 'link',
         tagNames: ['a'],
         contentDefault: '<b>#anchor</b>',
