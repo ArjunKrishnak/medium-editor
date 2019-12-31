@@ -145,6 +145,19 @@
             }
             return anchor;
         },
+        
+        createComment: function (document, textNodes, href, target) {
+            var anchor = document.createElement('cmt');
+            Util.moveTextRangeIntoElement(textNodes[0], textNodes[textNodes.length - 1], anchor);
+            anchor.setAttribute('href', href);
+            if (target) {
+                if (target === '_blank') {
+                    anchor.setAttribute('rel', 'noopener noreferrer');
+                }
+                anchor.setAttribute('target', target);
+            }
+            return anchor;
+        },
 
         /*
          * Given the provided match in the format {start: 1, end: 2} where start and end are indices into the
