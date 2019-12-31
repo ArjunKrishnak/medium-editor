@@ -42,7 +42,7 @@
         action: 'createLink',
         aria: 'link',
         tagNames: ['a'],
-        contentDefault: '<b>#</b>',
+        contentDefault: '<b>#anchor</b>',
         contentFA: '<i class="fa fa-link"></i>',
 
         init: function () {
